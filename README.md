@@ -2,12 +2,19 @@
 
 ![](Photos/UTMB-Photo.avif)
 
-## Table of Contents <a name="table-of-contents"></a>
-
-
-## Project in a nutshell
+## Introduction to the project <a name="introduction"></a>
 [> back to table of contents](#table-of-contents)
 
+## Table of Contents <a name="table-of-contents"></a>
+- [Introduction to the project](#introduction)
+- [Executive Summary](#executive-summary)
+- [Data Sourcing](#data-sourcing)
+- [Problem Statements](#problem-statements)
+- [Data Cleaning & Transformation](#data-cleaning--transformation)
+- [Skills Demonstrated](#skills-demonstrated)
+- [CSV tables](#csv-tables)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Future Research Recommendations](#future-research-recommendations)
 
 ## Executive Summary
 [> back to table of contents](#table-of-contents)
