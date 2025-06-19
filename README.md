@@ -3,7 +3,6 @@
 ![](Photos/UTMB-Photo.avif)
 
 ## Introduction to the project <a name="introduction"></a>
-[> back to table of contents](#table-of-contents)
 
 ## Table of Contents <a name="table-of-contents"></a>
 - [Introduction to the project](#introduction)
