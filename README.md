@@ -9,11 +9,11 @@
 - [Executive Summary](#executive-summary)
 - [Data Sourcing](#data-sourcing)
 - [Problem Statements](#problem-statements)
-- [Data Cleaning & Transformation](#data-cleaning--transformation)
+- [Data Cleaning & Transformation](#anchor-data-cleaning-transformation)
 - [Skills Demonstrated](#skills-demonstrated)
 - [CSV tables](#csv-tables)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Future Research Recommendations](#future-research-recommendations)
+- [Further Research Recommendations](#further-research-recommendations)
 
 ## Executive Summary
 [> back to table of contents](#table-of-contents)
