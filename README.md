@@ -38,7 +38,7 @@ This dataset contains 129 race results, which represents a relatively small samp
 
 That said, the analysis may still uncover interesting patterns or soft predictors worth exploring further. These insights should be considered as hypotheses rather than definitive conclusions — ideally validated with a larger dataset or additional performance metrics. Whether you're a data enthusiast or Ludovic Pommeret himself, take the results as an invitation to investigate, not as final truths.
 
-> Data last updated: 04.25.2025
+> Data on website last updated: 04.25.2025
 
 <br><br>
 ## Problem Statement
@@ -59,16 +59,16 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 13.	**Finish Time Statistics**: Compute the average finish time and standard deviation across all races.
 14.	**Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
 15.	**Recovery Time Impact**: Analyze whether shorter recovery periods between races lead to worse results.
-16.	
 
 <br><br>
 ## Data Cleaning & Transformation <a name="anchor-data-cleaning-transformation"></a>
 [> back to table of contents](#table-of-contents)
 
+- Link to the MySQL Script built to clean the data: [MySQL File](SQL-Scripts/Data-Cleaning-Script/MySQL%20-%20UTMB%20-%20Data%20Cleaning.sql)
+  
 <br><br>
 ## Skills Demonstrated
 [> back to table of contents](#table-of-contents)
-
 
 #### MySQL
 - Data Cleaning (standardization, outlier removal)
