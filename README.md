@@ -43,6 +43,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 <br><br>
 ## Problem Statement
 [> back to table of contents](#table-of-contents)
+
 **Fourteen questions** or problem statements have been answered through analysis within this dataset.
 1.	**Best and Worst Finish**: Identify the athlete’s best and worst race results.
 2.	**Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
@@ -70,9 +71,27 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 ## Skills Demonstrated
 [> back to table of contents](#table-of-contents)
 
-#### MySQL
-- Data Cleaning (standardization, outlier removal)
-- Exploratory Data Analysis
+### MySQL
+#### Data Cleaning
+* Removing duplicates through cte + row_number + windows function
+* Primary Key creation
+* Altering and inserting into table
+* Data Standardization
+  * Case
+  * Date
+  * Metric usage
+  * Data types
+* Adding, modifying & deleting columns based on what will be needed for EDA
+* Clauses used: CTEs, sub-queries, SUBSTRING_INDEX, WINDOWS FUNCTION, ROW_NUMBER(), INNER JOINS (CTE + Main Table), CONCAT(), UPPER(), TRIM() 
+
+#### Exploratory Data Analysis
+* .
+* .
+
+### Descriptive Statistics
+* Mean calculation
+* Standard deviation
+* Z-score standardizing
 
 <br><br>
 - ## CSV tables
