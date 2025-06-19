@@ -73,16 +73,18 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 
 ### MySQL
 #### Data Cleaning
-* Removing duplicates through cte + row_number + windows function
-* Primary Key creation
-* Altering and inserting into table
-* Data Standardization
-  * Case
-  * Date
-  * Metric usage
+* Created primary key
+* Removed duplicates using ROW_NUMBER() with CTE and window functions
+* Altered and inserted data into existing tables
+* Standardized data formats:
+  * Case formatting (e.g., UPPER(), TRIM())
+  * Dates
+  * Metric consistency
   * Data types
-* Adding, modifying & deleting columns based on what will be needed for EDA
-* Clauses used: CTEs, sub-queries, SUBSTRING_INDEX, WINDOWS FUNCTION, ROW_NUMBER(), INNER JOINS (CTE + Main Table), CONCAT(), UPPER(), TRIM() 
+* Modified table schema (added, changed, split, and deleted columns) for EDA
+* Key SQL clauses and functions used:
+* CTE, subqueries, WINDOW FUNCTIONS, SUBSTRING_INDEX, CONCAT(), INNER JOIN
+
 
 #### Exploratory Data Analysis
 * .
