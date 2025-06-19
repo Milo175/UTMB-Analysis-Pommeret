@@ -83,14 +83,16 @@ That said, the analysis may still uncover interesting patterns or soft predictor
   * Data types
 * Modified table schema (added, changed, split, and deleted columns) for EDA
 * Key SQL clauses and functions used:
-* CTE, subqueries, WINDOW FUNCTIONS, SUBSTRING_INDEX, CONCAT(), INNER JOIN
+  * CTE, subqueries, WINDOW FUNCTIONS, SUBSTRING_INDEX, CONCAT(), INNER JOIN
 
 
 #### Exploratory Data Analysis
-* .
-* .
+* Calculated standard deviation through MySQL function and manually
+* JOINED into CTEs and subqueries for effective analysis
+* 
 
-### Descriptive Statistics
+
+#### Descriptive Statistics
 * Mean calculation
 * Standard deviation
 * Z-score standardizing
