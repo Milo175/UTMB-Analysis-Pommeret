@@ -7,14 +7,14 @@ Welcome to my personal project!
 
 My name is **Milo**, and I am currently in the process of becoming a Data Analyst through self-education. In this project, I analyzed the race results of ultra marathon runner **Ludovic Pommeret** between 08-12-2007 and today. The reason I chose this specific topic is that I am an **ultra marathon enthousiast** and finisher myself. I specifically chose Ludovic as athlete due to the fact that he has both an **impressive and extensive** list of race results to his name.
 
-The **goal** of the project was to practice and further develop my Data Cleaning and Data Analysis skills in **MySQL**. 
+The **goal** of the project was to practice and further develop my Data Cleaning and Data Analysis skills in **MySQL**. In order to do so, I formulated 14 questions for me to answer. These questions are listed in the chapter "Problem Statement".
 
 <br><br>
 ## Table of Contents <a name="table-of-contents"></a>
 - [Introduction to the project](#introduction)
 - [Executive Summary](#executive-summary)
 - [Data Sourcing](#data-sourcing)
-- [Problem Statements](#problem-statements)
+- [Problem Statement](#problem-statement)
 - [Data Cleaning & Transformation](#anchor-data-cleaning-transformation)
 - [Skills Demonstrated](#skills-demonstrated)
 - [CSV tables](#csv-tables)
@@ -29,8 +29,14 @@ The **goal** of the project was to practice and further develop my Data Cleaning
 ## Data Sourcing
 [> back to table of contents](#table-of-contents)
 
+The data used for this analysis has been directly taken from the official UTMB website. This data is available for the general public to view and use. 
+
+Website: [click here to go to the website](https://utmb.world/runner/7829.ludovic.pommeret)
+
+> Data last updated: 04.25.2025
+
 <br><br>
-## Problem Statements
+## Problem Statement
 [> back to table of contents](#table-of-contents)
 
 <br><br>
