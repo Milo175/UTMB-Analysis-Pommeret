@@ -1,0 +1,5 @@
+Category,average_percentile_overall,standard_dev_overall
+100M,1.39,2.77
+50K,1.87,3.66
+100K,3.83,8.71
+20K,8.05,16.3
