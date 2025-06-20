@@ -7,7 +7,7 @@ Welcome to my personal project!
 
 My name is **Milo**, and I am currently in the process of becoming a Data Analyst through self-education. In this project, I analyzed the race results of ultra marathon runner **Ludovic Pommeret** between 08-12-2007 and today. The reason I chose this specific topic is that I am an **ultra marathon enthousiast** and finisher myself. I specifically chose Ludovic as athlete due to the fact that he has both an **impressive and extensive** list of race results to his name.
 
-The **goal** of the project was to practice and further develop my Data Cleaning and Data Analysis skills in **MySQL**. In order to do so, I formulated **14 questions** for me to answer. These questions are listed in the chapter "Problem Statement".
+The **goal** of the project was to practice and further develop my Data Cleaning and Data Analysis skills in **MySQL**. In order to do so, I formulated **15 questions** for me to answer. These questions are listed in the chapter "Problem Statement".
 
 <br><br>
 ## Table of Contents <a name="table-of-contents"></a>
@@ -43,7 +43,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 ## Problem Statement
 [> back to table of contents](#table-of-contents)
 
-**Fourteen questions** or problem statements have been answered through analysis within this dataset.
+**Fifteen questions** or problem statements have been answered through analysis within this dataset.
 
 1.	**Best and Worst Finish**: Identify the athlete’s best and worst race results.
 2.	**Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
@@ -107,9 +107,14 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 [> back to table of contents](#table-of-contents)
 
 
-1.	**Best and Worst Finish**: Identify the athlete’s best and worst race results.
+1. **Best and Worst Finish**: Identify the athlete’s best and worst race results.
 
+| Date       | Race                                                 | finish_percentile   |
+|:-----------|:-----------------------------------------------------|:--------------------|
+| 2021-10-21 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS | 0.06%               |
+| 2019-08-11 | MERIBEL TRAIL CHAMPIONNAT FRANCE TRAIL  - 25 KM      | 55.13%              |
 
+<br><br>
 2. **Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
 
 | Category   |   standard_deviation_minutes |
@@ -133,7 +138,8 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 | 100K       |                         3.83 |                   8.71 |
 | 20K        |                         8.05 |                  16.3  |
 
-4.	**Outlier Races**: Find races where the athlete significantly over- or underperformed compared to their average.
+<br><br>
+3. **Outlier Races**: Find races where the athlete significantly over- or underperformed compared to their average.
 
 Significantly **best** races over the years compared to average time for said race:
 | Date       | Race                                                 |   z_score_minutes |
@@ -153,8 +159,8 @@ Significantly **worst** races over the years compared to average time for said r
 | 2012-08-31 | THE NORTH FACE ULTRA-TRAIL DU MONT-BLANC®  - UTMB®   |              2.25 |
 | 2023-08-20 | TRAIL GALIBIER THABOR  - TRAIL DU GALIBIER-THABOR    |              2.22 |
 
-
-5.	**Easiest vs. Hardest Races**: Determine which races were the most and least challenging over the years.
+<br><br>
+4. **Easiest vs. Hardest Races**: Determine which races were the most and least challenging over the years.
 
 Consistently **least** challenging races over the years
 | Race                                                |   count_z_scores |   average_z_score |
@@ -174,13 +180,15 @@ Consistently **most** challenging races over the years
 | UTMB®                                                |                2 |              0.5  |
 | MAXI-RACE DU LAC D'ANNECY  - TECNICA MAXI-RACE       |                2 |              0.43 |
 
-6.	**Performance Over Time**: Investigate whether the athlete's UTMB Index improves over time.
+<br><br>
+5. **Performance Over Time**: Investigate whether the athlete's UTMB Index improves over time.
 
 For this question, I transformed the CSV table into a line chart to plot a trend line to discover trends over the last 18 years
 
 ![](Photos/Picture%201.png)
 
-8.	**Seasonal Performance Trends**: Assess if race performance varies depending on the time of year.
+<br><br>
+6. **Seasonal Performance Trends**: Assess if race performance varies depending on the time of year.
 
 | Season   |   number_of_races | average_percentile_finish   |
 |:---------|------------------:|:----------------------------|
@@ -189,15 +197,16 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 | Autumn   |                20 | 5.64%                       |
 | Winter   |                26 | 2.06%                       |
 
-8.	**Country-Based Performance**: Identify whether atlete performs best in home or away races.
+<br><br>
+7. **Country-Based Performance**: Identify whether atlete performs best in home or away races.
 
 | Country_cat   | average_percentile_finish   |
 |:--------------|:----------------------------|
 | FRANCE        | 2.26%                       |
 | AWAY          | 4.18%                       |
 
-
-10.	**Average Pace by Category**: Calculate average pace (min/km) for each race category.
+<br><br>
+8. **Average Pace by Category**: Calculate average pace (min/km) for each race category.
 
 | Category   |   average_pace_minutes |   average_pace_seconds |
 |:-----------|-----------------------:|-----------------------:|
@@ -206,7 +215,8 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 | 100K       |                      6 |                     52 |
 | 100M       |                      7 |                      4 |
 
-10.	**Ranking vs. Distance**: Explore whether ranking percentile tends to drop in longer races.
+ <br><br>
+9. **Ranking vs. Distance**: Explore whether ranking percentile tends to drop in longer races.
 
 | distance_category   | average_percentile_finish   |
 |:--------------------|:----------------------------|
@@ -218,7 +228,8 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 | 125 - 150 km        | 0.37%                       |
 | 150 - 175 km        | 1.89%                       |
 
-11.	**Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
+<br><br>
+10. **Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
 
 | Category   | Race                                                         |   meters_incline_per_hour |
 |:-----------|:-------------------------------------------------------------|--------------------------:|
@@ -228,25 +239,26 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 | 50K        | SIERRE-ZINAL                                                 |                    759.72 |
 | 50K        | TRAIL D'ALBERTVILLE                                          |                    713.24 |
 
-
-12.	**Elevation vs. Finish Time**: Examine whether higher total elevation correlates with slower race results.
+<br><br>
+11. **Elevation vs. Finish Time**: Examine whether higher total elevation correlates with slower race results.
 
 |   correlation_elevation_with_results |
 |--------------------------------:|
 |                         -0.0753 |
 
-13.	**Top 5% Finishes**: Calculate how often the athlete finishes in the top 5% overall.
+<br><br>
+12. **Top 5% Finishes**: Calculate how often the athlete finishes in the top 5% overall.
 
 | percentage_top_five_finishes   |
 |:-------------------------------|
 | 89.92%                         |
 
-14.	**Finish Time Statistics**: Compute the average finish time and standard deviation across all races.
+<br><br>
+13. **Finish Time Statistics**: Compute the average finish time and standard deviation across all races.
 ![]()
 
-
-
-16.	**Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
+<br><br>
+14. **Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
 
 | Date       | Race                                                | Category   |   Distance_km |   km/h |
 |:-----------|:----------------------------------------------------|:-----------|--------------:|-------:|
@@ -256,7 +268,8 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 | 2020-10-11 | EDF TRAIL VALLÉES D'AIGUEBLANCHE  - ÉCHAPEAUX BELLE | 20K        |          25.8 |  12.39 |
 | 2019-04-27 | LA BOUILLONNANTE  - LA BOUILLONNANTE 50             | 50K        |          52.5 |  12.24 |
 
-16.	**Recovery Time Impact**: Analyze whether shorter recovery periods between races lead to worse results.
+<br><br>
+15. **Recovery Time Impact**: Analyze whether shorter recovery periods between races lead to worse results.
 	
 | days_between_races   | average_percentile_finish   |
 |:---------------------|:----------------------------|
