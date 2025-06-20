@@ -73,29 +73,33 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 
 ### MySQL
 #### Data Cleaning
-* Created primary key
-* Removed duplicates using ROW_NUMBER() with CTE and window functions
-* Altered and inserted data into existing tables
-* Standardized data formats:
+* Created **primary key**
+* **Removed duplicates** using ROW_NUMBER() with CTE and window functions
+* **Altered and inserted data** into existing tables
+* **Standardized data** formats:
   * Case formatting (e.g., UPPER(), TRIM())
   * Dates
   * Metric consistency
   * Data types
-* Modified table schema (added, changed, split, and deleted columns) for EDA
-* Key SQL clauses and functions used:
+* **Modified table schema** (added, changed, split, and deleted columns) for EDA
+* Key **SQL clauses and functions** used:
   * CTE, subqueries, WINDOW FUNCTIONS, SUBSTRING_INDEX, CONCAT(), INNER JOIN
 
 
 #### Exploratory Data Analysis
-* Calculated standard deviation through MySQL function and manually
-* JOINED into CTEs and subqueries for effective analysis
-* 
-
+* Identified trends and patterns in performance across multiple variables
+* Applied **descriptive statistics** to explore distributions, variability, and anomalies
+* **Analyzed data over time** (by year and season) to uncover temporal trends
+* Evaluated **data quality** and adjusted approach based on sample size limitations:
+  * Refined questions or modified columns to improve result accuracy
+  * Created custom bins/sub-categories for better data segmentation
+* Formulated and researched **hypotheses** based on evolving insights
+* Performed **arithmetic operations** (AVG(), DIV(), SQRT(), SUM(), POWER()) to calculate key metrics
+* Prioritized **clear presentation of findings** to ensure insights were actionable and understandable
 
 #### Descriptive Statistics
-* Mean calculation
-* Standard deviation
-* Z-score standardizing
+* Mean, standard deviation, z-score standardization
+
 
 <br><br>
 - ## CSV tables
