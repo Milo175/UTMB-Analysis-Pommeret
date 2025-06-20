@@ -51,7 +51,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 4.	**Easiest vs. Hardest Races**: Determine which races were the most and least challenging over the years.
 5.	**Performance Over Time**: Investigate whether the athlete's UTMB Index improves over time.
 6.	**Seasonal Performance Trends**: Assess if race performance varies depending on the time of year.
-7.	**Country-Based Performance**: Identify in which countries the athlete performs best and worst.
+7.	**Country-Based Performance**: Identify whether atlete performs best in home or away races.
 8.	**Average Pace by Category**: Calculate average pace (min/km) for each race category.
 9.	**Ranking vs. Distance**: Explore whether ranking percentile tends to drop in longer races.
 10.	**Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
@@ -175,37 +175,101 @@ Consistently **most** challenging races over the years
 | MAXI-RACE DU LAC D'ANNECY  - TECNICA MAXI-RACE       |                2 |              0.43 |
 
 6.	**Performance Over Time**: Investigate whether the athlete's UTMB Index improves over time.
-![]()
 
-7.	**Seasonal Performance Trends**: Assess if race performance varies depending on the time of year.
-![]()
+For this question, I transformed the CSV table into a line chart to plot a trend line to discover trends over the last 18 years
 
-8.	**Country-Based Performance**: Identify in which countries the athlete performs best and worst.
-![]()
+![](Photos/Picture%201.png)
 
-9.	**Average Pace by Category**: Calculate average pace (min/km) for each race category.
-![]()
+8.	**Seasonal Performance Trends**: Assess if race performance varies depending on the time of year.
+
+| Season   |   number_of_races | average_percentile_finish   |
+|:---------|------------------:|:----------------------------|
+| Spring   |                35 | 0.84%                       |
+| Summer   |                48 | 3.45%                       |
+| Autumn   |                20 | 5.64%                       |
+| Winter   |                26 | 2.06%                       |
+
+8.	**Country-Based Performance**: Identify whether atlete performs best in home or away races.
+
+| Country_cat   | average_percentile_finish   |
+|:--------------|:----------------------------|
+| FRANCE        | 2.26%                       |
+| AWAY          | 4.18%                       |
+
+
+10.	**Average Pace by Category**: Calculate average pace (min/km) for each race category.
+
+| Category   |   average_pace_minutes |   average_pace_seconds |
+|:-----------|-----------------------:|-----------------------:|
+| 20K        |                      6 |                      1 |
+| 50K        |                      5 |                     51 |
+| 100K       |                      6 |                     52 |
+| 100M       |                      7 |                      4 |
 
 10.	**Ranking vs. Distance**: Explore whether ranking percentile tends to drop in longer races.
-![]()
+
+| distance_category   | average_percentile_finish   |
+|:--------------------|:----------------------------|
+| 0 - 25 km           | 9.42%                       |
+| 25 - 50 km          | 1.64%                       |
+| 50 - 75 km          | 2.49%                       |
+| 75 - 100 km         | 4.25%                       |
+| 100 - 125 km        | 2.82%                       |
+| 125 - 150 km        | 0.37%                       |
+| 150 - 175 km        | 1.89%                       |
 
 11.	**Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
-![]()
+
+| Category   | Race                                                         |   meters_incline_per_hour |
+|:-----------|:-------------------------------------------------------------|--------------------------:|
+| 20K        | TRANSVULCANIA ULTRAMARATHON LA PALMA ISLAND  - HALF MARATHON |                    913.88 |
+| 20K        | VILLACIDRO SKYRACE  - 21K                                    |                    809.1  |
+| 20K        | MONTREUX TRAIL FESTIVAL  - FREDDIE'S NIGHT                   |                    796.17 |
+| 50K        | SIERRE-ZINAL                                                 |                    759.72 |
+| 50K        | TRAIL D'ALBERTVILLE                                          |                    713.24 |
+
 
 12.	**Elevation vs. Finish Time**: Examine whether higher total elevation correlates with slower race results.
-![]()
+
+|   correlation_elevation_with_results |
+|--------------------------------:|
+|                         -0.0753 |
 
 13.	**Top 5% Finishes**: Calculate how often the athlete finishes in the top 5% overall.
-![]()
+
+| percentage_top_five_finishes   |
+|:-------------------------------|
+| 89.92%                         |
 
 14.	**Finish Time Statistics**: Compute the average finish time and standard deviation across all races.
 ![]()
 
-15.	**Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
-![]()
+
+
+16.	**Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
+
+| Date       | Race                                                | Category   |   Distance_km |   km/h |
+|:-----------|:----------------------------------------------------|:-----------|--------------:|-------:|
+| 2008-12-07 | LA SAINTÉLYON                                       | 50K        |          70   |  13.6  |
+| 2009-12-06 | LA SAINTÉLYON                                       | 50K        |          70   |  12.61 |
+| 2019-04-14 | TRAIL DROME  - 42 KM                                | 50K        |          42.7 |  12.53 |
+| 2020-10-11 | EDF TRAIL VALLÉES D'AIGUEBLANCHE  - ÉCHAPEAUX BELLE | 20K        |          25.8 |  12.39 |
+| 2019-04-27 | LA BOUILLONNANTE  - LA BOUILLONNANTE 50             | 50K        |          52.5 |  12.24 |
 
 16.	**Recovery Time Impact**: Analyze whether shorter recovery periods between races lead to worse results.
-![]()
+	
+| days_between_races   | average_percentile_finish   |
+|:---------------------|:----------------------------|
+| 0 - 29               | 2.4%                        |
+| 30 - 59              | 1.2%                        |
+| 60 - 89              | 2.9%                        |
+| 90 - 119             | 8.0%                        |
+| 120 - 149            | 3.8%                        |
+| 150 - 179            | 2.9%                        |
+| 180 - 209            | 5.4%                        |
+| 210 - 239            | 11.6%                       |
+| 270 - 299            | 2.2%                        |
+
 
 <br><br>
 ## Further Research Recommendations
