@@ -1,0 +1,5 @@
+Category,total_races,average_finish_time_minutes,standard_deviation
+100M,23,1052.78,529.23
+100K,30,533.36,112.06
+50K,66,293.41,79.64
+20K,10,136.80,56.11
