@@ -17,7 +17,6 @@ The **goal** of the project was to practice and further develop my Data Cleaning
 - [Problem Statement](#problem-statement)
 - [Data Cleaning & Transformation](#anchor-data-cleaning-transformation)
 - [Skills Demonstrated](#skills-demonstrated)
-- [CSV tables](#csv-tables)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Further Research Recommendations](#further-research-recommendations)
 
@@ -45,6 +44,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 [> back to table of contents](#table-of-contents)
 
 **Fourteen questions** or problem statements have been answered through analysis within this dataset.
+
 1.	**Best and Worst Finish**: Identify the athlete’s best and worst race results.
 2.	**Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
 3.	**Outlier Races**: Find races where the athlete significantly over- or underperformed compared to their average.
@@ -102,43 +102,110 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 
 
 <br><br>
-- ## CSV tables
+
+## Exploratory Data Analysis
 [> back to table of contents](#table-of-contents)
+
 
 1.	**Best and Worst Finish**: Identify the athlete’s best and worst race results.
 
-2.	**Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
 
-3.	**Outlier Races**: Find races where the athlete significantly over- or underperformed compared to their average.
+2. **Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
 
-4.	**Easiest vs. Hardest Races**: Determine which races were the most and least challenging over the years.
+| Category   |   standard_deviation_minutes |
+|:-----------|---------------------:|
+| 100M       |               529.23 |
+| 100K       |               112.06 |
+| 50K        |                79.64 |
+| 20K        |                56.11 |
 
-5.	**Performance Over Time**: Investigate whether the athlete's UTMB Index improves over time.
+| Category   |   total_races |   average_finish_time_minutes |   standard_deviation_minutes |
+|:-----------|--------------:|------------------------------:|---------------------:|
+| 100M       |            23 |                       1052.78 |               529.23 |
+| 100K       |            30 |                        533.36 |               112.06 |
+| 50K        |            66 |                        293.41 |                79.64 |
+| 20K        |            10 |                        136.8  |                56.11 |
 
-6.	**Seasonal Performance Trends**: Assess if race performance varies depending on the time of year.
+| Category   |   average_percentile_overall |   standard_dev_percentile_overall |
+|:-----------|-----------------------------:|-----------------------:|
+| 100M       |                         1.39 |                   2.77 |
+| 50K        |                         1.87 |                   3.66 |
+| 100K       |                         3.83 |                   8.71 |
+| 20K        |                         8.05 |                  16.3  |
 
-7.	**Country-Based Performance**: Identify in which countries the athlete performs best and worst.
+4.	**Outlier Races**: Find races where the athlete significantly over- or underperformed compared to their average.
 
-8.	**Average Pace by Category**: Calculate average pace (min/km) for each race category.
+Significantly **best** races over the years compared to average time for said race:
+| Date       | Race                                                 |   z_score_minutes |
+|:-----------|:-----------------------------------------------------|------------------:|
+| 2018-08-29 | UTMB®  - TDS®                                        |             -2.03 |
+| 2022-10-20 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS |             -2.03 |
+| 2017-10-19 | GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS    |             -2.03 |
+| 2007-08-12 | SIERRE-ZINAL                                         |             -1.47 |
+| 2008-08-10 | SIERRE-ZINAL                                         |             -1.34 |
 
-9.	**Ranking vs. Distance**: Explore whether ranking percentile tends to drop in longer races.
-
-10.	**Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
-
-11.	**Elevation vs. Finish Time**: Examine whether higher total elevation correlates with slower race results.
-
-12.	**Top 5% Finishes**: Calculate how often the athlete finishes in the top 5% overall.
-
-13.	**Finish Time Statistics**: Compute the average finish time and standard deviation across all races.
-
-14.	**Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
-
-15.	**Recovery Time Impact**: Analyze whether shorter recovery periods between races lead to worse results.
+Significantly **worst** races over the years compared to average time for said race:
+| Date       | Race                                                 |   z_score_minutes |
+|:-----------|:-----------------------------------------------------|------------------:|
+| 2020-10-29 | GOLDEN TRAIL CHAMPIONSHIP  - GTC AZORES              |              4.31 |
+| 2019-08-11 | MERIBEL TRAIL CHAMPIONNAT FRANCE TRAIL  - 25 KM      |              2.54 |
+| 2023-10-19 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS |              2.51 |
+| 2012-08-31 | THE NORTH FACE ULTRA-TRAIL DU MONT-BLANC®  - UTMB®   |              2.25 |
+| 2023-08-20 | TRAIL GALIBIER THABOR  - TRAIL DU GALIBIER-THABOR    |              2.22 |
 
 
-<br><br>
-## Exploratory Data Analysis
-[> back to table of contents](#table-of-contents)
+5.	**Easiest vs. Hardest Races**: Determine which races were the most and least challenging over the years.
+
+Consistently **least** challenging races over the years
+| Race                                                |   count_z_scores |   average_z_score |
+|:----------------------------------------------------|-----------------:|------------------:|
+| TRAIL FAVERGES ICEBREAKER  - MARATRAIL DE LA SAMBUY |                5 |             -0.65 |
+| TRAIL NIVOLET REVARD  - TRAIL NIVOLET-REVARD        |                5 |             -0.25 |
+| ERGYSPORT TRAIL DU VENTOUX  - 46 KM                 |                4 |             -0.8  |
+| FESTIVAL DES TEMPLIERS  - GRAND TRAIL DES TEMPLIERS |                3 |             -1.01 |
+| SIERRE-ZINAL                                        |                2 |             -1.4  |
+
+Consistently **most** challenging races over the years
+| Race                                                 |   count_z_scores |   average_z_score |
+|:-----------------------------------------------------|-----------------:|------------------:|
+| TRAIL SAINTE VICTOIRE                                |                5 |              0.62 |
+| LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS |                3 |              1.32 |
+| LA SAINTÉLYON                                        |                3 |              0.5  |
+| UTMB®                                                |                2 |              0.5  |
+| MAXI-RACE DU LAC D'ANNECY  - TECNICA MAXI-RACE       |                2 |              0.43 |
+
+6.	**Performance Over Time**: Investigate whether the athlete's UTMB Index improves over time.
+![]()
+
+7.	**Seasonal Performance Trends**: Assess if race performance varies depending on the time of year.
+![]()
+
+8.	**Country-Based Performance**: Identify in which countries the athlete performs best and worst.
+![]()
+
+9.	**Average Pace by Category**: Calculate average pace (min/km) for each race category.
+![]()
+
+10.	**Ranking vs. Distance**: Explore whether ranking percentile tends to drop in longer races.
+![]()
+
+11.	**Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
+![]()
+
+12.	**Elevation vs. Finish Time**: Examine whether higher total elevation correlates with slower race results.
+![]()
+
+13.	**Top 5% Finishes**: Calculate how often the athlete finishes in the top 5% overall.
+![]()
+
+14.	**Finish Time Statistics**: Compute the average finish time and standard deviation across all races.
+![]()
+
+15.	**Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
+![]()
+
+16.	**Recovery Time Impact**: Analyze whether shorter recovery periods between races lead to worse results.
+![]()
 
 <br><br>
 ## Further Research Recommendations
