@@ -105,6 +105,37 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 - ## CSV tables
 [> back to table of contents](#table-of-contents)
 
+1.	**Best and Worst Finish**: Identify the athlete’s best and worst race results.
+
+2.	**Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
+
+3.	**Outlier Races**: Find races where the athlete significantly over- or underperformed compared to their average.
+
+4.	**Easiest vs. Hardest Races**: Determine which races were the most and least challenging over the years.
+
+5.	**Performance Over Time**: Investigate whether the athlete's UTMB Index improves over time.
+
+6.	**Seasonal Performance Trends**: Assess if race performance varies depending on the time of year.
+
+7.	**Country-Based Performance**: Identify in which countries the athlete performs best and worst.
+
+8.	**Average Pace by Category**: Calculate average pace (min/km) for each race category.
+
+9.	**Ranking vs. Distance**: Explore whether ranking percentile tends to drop in longer races.
+
+10.	**Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
+
+11.	**Elevation vs. Finish Time**: Examine whether higher total elevation correlates with slower race results.
+
+12.	**Top 5% Finishes**: Calculate how often the athlete finishes in the top 5% overall.
+
+13.	**Finish Time Statistics**: Compute the average finish time and standard deviation across all races.
+
+14.	**Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
+
+15.	**Recovery Time Impact**: Analyze whether shorter recovery periods between races lead to worse results.
+
+
 <br><br>
 ## Exploratory Data Analysis
 [> back to table of contents](#table-of-contents)
