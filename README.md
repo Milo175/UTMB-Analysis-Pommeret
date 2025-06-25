@@ -238,6 +238,7 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 <br><br>
 8. **Average Pace by Category**: Calculate average pace (min/km) for each race category.
 
+**Table 10: Average pace (min/km) per race category**
 | Category   |   average_pace_minutes |   average_pace_seconds |
 |:-----------|-----------------------:|-----------------------:|
 | 20K        |                      6 |                      1 |
@@ -245,6 +246,10 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 | 100K       |                      6 |                     52 |
 | 100M       |                      7 |                      4 |
 
+* In table 10 we find that Ludovic's pace in min/km is fastest in category '50K' races, followed by '20K' and '100K' races, and slowest in the longest '100M' category.
+* These results follow a logical pattern where the longer the distance of the race, the slower the average pace is due to energy preservation, increased fatigue and higher elevations.
+
+  
  <br><br>
 9. **Ranking vs. Distance**: Explore whether ranking percentile tends to drop in longer races.
 
