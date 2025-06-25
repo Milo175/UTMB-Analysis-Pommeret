@@ -43,7 +43,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 ## Problem Statement
 [> back to table of contents](#table-of-contents)
 
-**Fifteen questions** or problem statements have been answered through analysis within this dataset.
+**Fourteen questions** or problem statements have been answered through analysis within this dataset.
 
 1.	**Best and Worst Finish**: Identify the athlete’s best and worst race results.
 2.	**Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
