@@ -106,7 +106,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 [> back to table of contents](#table-of-contents)
 
 
-1. **Best and Worst Finish**: Identify the athlete’s best and worst race results.
+### 1. **Best and Worst Finish**: Identify the athlete’s best and worst race results.
 
 **Table 1: Best and worst finished races**
 | Date       | Race                                                 | finish_percentile   |
@@ -118,7 +118,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 * His worst career finish was on August 11th, 2019, at the 'MERIBEL TRAIL CHAMPIONNAT FRANCE TRAIL', where he finished in the top 55.13% percentile of all athletes.
 
 <br><br>
-2. **Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
+### 2. **Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
 
 **Table 2: Standard deviation for variable "finish times in minutes" per category**
 | Category   |   total_races |   average_finish_time_minutes |   standard_deviation_minutes |
@@ -147,7 +147,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 **Note:** It is important to mention that the total count in races is not equal per category, and especially low for the '20K' and the '100M' categories. Only the results for the '50K' category meets the requirements for the results to be reliable. To further illustrate this point, the calculated needed sample size per category is 51, based on a confidence level of 70% and margin of error of 5%. The above conclusion therefore acts more as a soft hypothesis, than a real statistically significant finding.
 
 <br><br>
-3. **Outlier Races**: Find races where the athlete significantly over- or underperformed compared to their average.
+### 3. **Outlier Races**: Find races where the athlete significantly over- or underperformed compared to their average.
 
 * The question has been answered by grouping the races together by title, over all the years the athlete has been active, and calculating the mean performance in percentile finish. Then, I calculated the z-score of each year Ludovic ran said race, to find which years he over or underperformed. Negative z-scores are in this case positive, as lower percentile finishes indicate better performances.
   
@@ -174,7 +174,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 * When comparing tables 4 and 5, we find that his significantly worst races have much higher z-scores than his significantly best races. This shows Ludovic regularly performs to his highest capabilities, making great performances stand out less than his worst performances.
 
 <br><br>
-4. **Easiest vs. Hardest Races**: Determine which races were the most and least challenging over the years.
+### 4. **Easiest vs. Hardest Races**: Determine which races were the most and least challenging over the years.
 
 To find out which races Ludovic were generally easier or harder for him, I counted the number of z-scores over the years per race, with one filter that included only negative and one including only positive z-scores, and calculated the average z-score over the years for each race as well.
 
@@ -200,7 +200,7 @@ To find out which races Ludovic were generally easier or harder for him, I count
 * In table 7, we find that the 'TRAIL SAINTE VICTOIRE' race has the highest count of positive z-scores, indicating consistent struggle for the athlete when running this race over the years.
 
 <br><br>
-5. **Performance Over Time**: Investigate whether the athlete's UTMB Index improves over time.
+### 5. **Performance Over Time**: Investigate whether the athlete's UTMB Index improves over time.
 
 For this question, I transformed the CSV table into a line chart to plot a trend line to discover trends over the last 18 years
 
@@ -210,7 +210,7 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 * The graph shows a steady linear trend line in the athletes 'Score' within the UTMB Index over the years. Given Ludovic's impressive records, this means that from the start of his ultra marathon sports career in 2007 until today, he has consistently been one of the best ultra runners in the world.
   
 <br><br>
-6. **Seasonal Performance Trends**: Assess if race performance varies depending on the time of year.
+### 6. **Seasonal Performance Trends**: Assess if race performance varies depending on the time of year.
 
 **Table 8: Athlete's average percentile finish per season of the year**
 | Season   |   number_of_races | average_percentile_finish   |
@@ -226,7 +226,7 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 **Note:** Again, it is important to mention that the total count in races is not equal per category. None of the results in the above table meets the requirements they need for them to be reliable. To further illustrate this point, the calculated needed sample size per category is 51, based on a confidence level of 70% and margin of error of 5%. The above conclusion therefore acts more as a soft hypothesis, than a real statistically significant finding.
 
 <br><br>
-7. **Country-Based Performance**: Identify whether atlete performs best in home or away races.
+### 7. **Country-Based Performance**: Identify whether atlete performs best in home or away races.
 
 **Table 9: Performance in home (France) vs Away races**
 | Country_cat   | count_races  | average_percentile_finish   |
@@ -237,7 +237,7 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 * Ludovic clearly performs better in Home races in France (top 2.26%) than in Away races outside of France (top 4.18%).
 
 <br><br>
-8. **Average Pace by Category**: Calculate average pace (min/km) for each race category.
+### 8. **Average Pace by Category**: Calculate average pace (min/km) for each race category.
 
 **Table 10: Average pace (min/km) per race category**
 | Category   |   average_pace_minutes |   average_pace_seconds |
@@ -252,7 +252,7 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 
   
  <br><br>
-9. **Ranking vs. Distance**: Explore whether ranking percentile tends to drop in longer races.
+### 9. **Ranking vs. Distance**: Explore whether ranking percentile tends to drop in longer races.
 
 **Table 11: Average percentile finished categorized by race distance**
 | distance_category   | average_percentile_finish   |
@@ -272,7 +272,7 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 **Note:** it is important to mention that the count of races between 0 - 25 KM is 10, which is a very small sample size, which has to be taken into consideration when analyzing the downwards trendline in table 11. The above conclusion therefore acts more as a soft hypothesis, than a real statistically significant finding.
 
 <br><br>
-10. **Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
+### 10. **Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
 
 **Table 12: Top 8 races with the fastest elevation gain pace (meters incline/hour)**
 | Category   | Date       | Race                                                         |   meters_incline_per_hour |
@@ -290,7 +290,7 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 * The results in table 12 are similar to the general hypothesis, which states that the shorter the race, the lower the average elevation in meters and the more energy the athlete has to push himself over the elevation as fast as possible.
 
 <br><br>
-11. **Elevation vs. Finish Time**: Examine whether higher total elevation correlates with race results.
+### 11. **Elevation vs. Finish Time**: Examine whether higher total elevation correlates with race results.
 
 |   correlation_elevation_with_results |
 |--------------------------------:|
@@ -299,7 +299,7 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 * The correlation coefficient between elevation gain and race results (finished percentile) is -0.0753, which indicates a very weak to relationship between the two variables and that higher elevation gain very slightly increases race results. However, the correlation value is so low that it is safe to assume no actual relationship exists.
 
 <br><br>
-12. **Top 5% Finishes**: Calculate how often the athlete finishes in the top 5% overall.
+### 12. **Top 5% Finishes**: Calculate how often the athlete finishes in the top 5% overall.
 
 | percentage_top_five_percentage_finishes   |
 |:-------------------------------|
@@ -308,7 +308,7 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 * Ludovic has finished in the top 5 percentile for 89.92% of all the races he has run.  
 
 <br><br>
-13. **Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
+### 13. **Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
 
 **Table 13: Top 5 races with highest average speed (km/h)**
 | Date       | Race                                                | Category   |  Elevation_gain | Distance_km |   km/h |
@@ -323,7 +323,7 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 * Ludovic ran his fastest pace during the 'LA SAINTÉLYON' in 2008 (13.6 km/h) and in 2009 (12.61 km/h). His pace was faster than his forth fastest paced race "EDF TRAIL VALLÉES D'AIGUEBLANCHE  - ÉCHAPEAUX BELLE" in 2020, which had a shorter distance and lower elevation gain. 
 
 <br><br>
-14. **Recovery Time Impact**: Analyze whether shorter recovery periods between races lead to worse results.
+### 14. **Recovery Time Impact**: Analyze whether shorter recovery periods between races lead to worse results.
 
 For this analysis, I categorized the days between races in bins of 30 days in order to group the races together for analysis.
 
