@@ -115,8 +115,8 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 | 2021-10-21 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS | 0.06%               |
 | 2019-08-11 | MERIBEL TRAIL CHAMPIONNAT FRANCE TRAIL  - 25 KM      | 55.13%              |
 
-* Ludovic's best career finish was at the race 'Le Grand Raid de la Réunion - La Diagonale des Fous' on the 21st of October, 2021, where he finished in the top 0.06% percentile of all athletes.
-* His worst career finish was on August 11th, 2019, at the 'Meribel Trail Chapionnat France Trail', where he finished in the top 55.13% percentile of all athletes.
+* Ludovic's best career finish was at the race 'LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS' on the 21st of October, 2021, where he finished in the top 0.06% percentile of all athletes.
+* His worst career finish was on August 11th, 2019, at the 'MERIBEL TRAIL CHAMPIONNAT FRANCE TRAIL', where he finished in the top 55.13% percentile of all athletes.
 
 <br><br>
 2. **Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
@@ -168,14 +168,14 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 
 * The question has been answered by grouping the races together by title, over all the years the athlete has been active, and calculating the mean performance in percentile finish. Then, I calculated the z-score of each year Ludovic ran said race, to find which years he over or underperformed.
 * Negative z-scores are in this case positive, as lower percentile finishes indicate better performances.
-* In table 4, we find that Ludovic significantly improved his performance for the race 'Le Grand Raid De La Réunion - La Diagonale Des Fous' in 2021, with a z-score of -0.47.
+* In table 4, we find that Ludovic significantly improved his performance for the race 'LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS' in 2021, with a z-score of -0.47.
 * Table 5 shows high z-scores of between 4 and 5. 2007 was the worst year for Ludovic running the Sierra Zinal, with a z-score of 4.91.
 * When comparing tables 4 and 5, we find that his significantly worst races have much higher z-scores than his significantly best races. This shows Ludovic regularly performs to his highest capabilities, making great performances stand out less than his worst performances.
 
 <br><br>
 4. **Easiest vs. Hardest Races**: Determine which races were the most and least challenging over the years.
 
-Consistently **least** challenging races over the years
+**Table 6: Consistently least challenging races over the years**
 | Race                                                |   count_z_scores |   average_z_score |
 |:----------------------------------------------------|-----------------:|------------------:|
 | TRAIL FAVERGES ICEBREAKER  - MARATRAIL DE LA SAMBUY |                5 |             -0.65 |
@@ -184,7 +184,7 @@ Consistently **least** challenging races over the years
 | FESTIVAL DES TEMPLIERS  - GRAND TRAIL DES TEMPLIERS |                3 |             -1.01 |
 | SIERRE-ZINAL                                        |                2 |             -1.4  |
 
-Consistently **most** challenging races over the years
+**Table 7: Consistently most challenging races over the years**
 | Race                                                 |   count_z_scores |   average_z_score |
 |:-----------------------------------------------------|-----------------:|------------------:|
 | TRAIL SAINTE VICTOIRE                                |                5 |              0.62 |
@@ -192,6 +192,10 @@ Consistently **most** challenging races over the years
 | LA SAINTÉLYON                                        |                3 |              0.5  |
 | UTMB®                                                |                2 |              0.5  |
 | MAXI-RACE DU LAC D'ANNECY  - TECNICA MAXI-RACE       |                2 |              0.43 |
+
+* To find out which races Ludovic were generally easier or harder for him, I counted the number of z-scores over the years per race, with one filter that included only negative and one including only positive z-scores, and calculated the average z-score over the years for each race as well.
+* Table 6 shows that the athlete most often has a negative z-score for the 'TRAIL FAVERGES ICEBREAKER  - MARATRAIL DE LA SAMBUY', which shows this was consistently his least challenging race over the years.
+* In table 7, we find that the 'TRAIL SAINTE VICTOIRE' race has the highest count of positive z-scores, indicating consistent struggle for the athlete when running this race over the years.
 
 <br><br>
 5. **Performance Over Time**: Investigate whether the athlete's UTMB Index improves over time.
