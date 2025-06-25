@@ -132,36 +132,45 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 * In table two, we find a clear difference in standard deviations in finish times in minutes per category, with a clear pattern showing the higher the race category, the higher the standard deviation.
 * This tells us that, on average, the greater the distance of the race, the more variety is found in finish times in total minutes.
 
-Note: It is important to mention that the total count in races is not equal per category, and especially low for the '20K' and the '100M' categories. Only the results for the '50K' category meets the requirements for the results to be reliable. To further illustrate this point, the calculated needed sample size per category is 51, based on a confidence level of 70% and margin of error of 5%. The above conclusion therefore acts more as a soft hypothesis, than a real statistically significant finding.
+**Table 3: standard deviation for variable "finished percentile" across all genders per category**
+| Category   |   total_races | average_percentile_overall |   standard_dev_percentile_overall |
+|:-----------|--------------:|---------------------------:|-----------------------:|
+| 100M       |            23 |                       1.39 |                   2.77 |
+| 50K        |            66 |                       1.87 |                   3.66 |
+| 100K       |            30 |                       3.83 |                   8.71 |
+| 20K        |            10 |                       8.05 |                  16.3  |
 
+* In table three, the data on his average_percentile_overall finishes shows that Ludovic finishes highest overall in the '100M' category, followed by the '50K', '100K', and finally the '20K'.
+* The standard deviations per category follow the same trend/pattern, which shows that the athelete is most consistent in the categories in which he is also the most confident or strong. 
 
-| Category   |   average_percentile_overall |   standard_dev_percentile_overall |
-|:-----------|-----------------------------:|-----------------------:|
-| 100M       |                         1.39 |                   2.77 |
-| 50K        |                         1.87 |                   3.66 |
-| 100K       |                         3.83 |                   8.71 |
-| 20K        |                         8.05 |                  16.3  |
+**Note:** It is important to mention that the total count in races is not equal per category, and especially low for the '20K' and the '100M' categories. Only the results for the '50K' category meets the requirements for the results to be reliable. To further illustrate this point, the calculated needed sample size per category is 51, based on a confidence level of 70% and margin of error of 5%. The above conclusion therefore acts more as a soft hypothesis, than a real statistically significant finding.
 
 <br><br>
 3. **Outlier Races**: Find races where the athlete significantly over- or underperformed compared to their average.
 
-Significantly **best** races over the years compared to average time for said race:
-| Date       | Race                                                 |   z_score_minutes |
-|:-----------|:-----------------------------------------------------|------------------:|
-| 2018-08-29 | UTMB®  - TDS®                                        |             -2.03 |
-| 2022-10-20 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS |             -2.03 |
-| 2017-10-19 | GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS    |             -2.03 |
-| 2007-08-12 | SIERRE-ZINAL                                         |             -1.47 |
-| 2008-08-10 | SIERRE-ZINAL                                         |             -1.34 |
+**Table 4: Significantly the best races over the years compared to the average time for said race:**
+| Date       | Race                                                 |   z_score_percentile_finish |
+|:-----------|:-----------------------------------------------------|----------------------------:|
+| 2021-10-21 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS |                       -0.47 |
+| 2022-08-23 | UTMB® MONT BLANC  - TDS®                             |                       -0.46 |
+| 2016-08-26 | UTMB®                                                |                       -0.46 |
+| 2019-04-27 | LA BOUILLONNANTE  - LA BOUILLONNANTE 50              |                       -0.46 |
+| 2019-10-17 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS |                       -0.45 |
 
-Significantly **worst** races over the years compared to average time for said race:
-| Date       | Race                                                 |   z_score_minutes |
-|:-----------|:-----------------------------------------------------|------------------:|
-| 2020-10-29 | GOLDEN TRAIL CHAMPIONSHIP  - GTC AZORES              |              4.31 |
-| 2019-08-11 | MERIBEL TRAIL CHAMPIONNAT FRANCE TRAIL  - 25 KM      |              2.54 |
-| 2023-10-19 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS |              2.51 |
-| 2012-08-31 | THE NORTH FACE ULTRA-TRAIL DU MONT-BLANC®  - UTMB®   |              2.25 |
-| 2023-08-20 | TRAIL GALIBIER THABOR  - TRAIL DU GALIBIER-THABOR    |              2.22 |
+**Table 5: Significantly the worst races over the years compared to the average time for said race:**
+| Date       | Race                                                 |   z_score_percentile_finish |
+|:-----------|:-----------------------------------------------------|----------------------------:|
+| 2007-08-12 | SIERRE-ZINAL                                         |                        4.91 |
+| 2009-12-06 | LA SAINTÉLYON                                        |                        4.3  |
+| 2022-11-05 | THE AMAZING THAILAND WMRC  - CHIANGMAI WMTRC  LONG   |                        4.08 |
+| 2023-10-19 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS |                        3.99 |
+| 2020-10-29 | GOLDEN TRAIL CHAMPIONSHIP  - GTC AZORES              |                        3.8  |
+
+* The question has been answered by grouping the races together by title, over all the years the athlete has been active, and calculating the mean performance in percentile finish. Then, I calculated the z-score of each year Ludovic ran said race, to find which years he over or underperformed.
+* Negative z-scores are in this case positive, as lower percentile finishes indicate better performances.
+* In table 4, we find that Ludovic significantly improved his performance for the race 'Le Grand Raid De La Réunion - La Diagonale Des Fous' in 2021, with a z-score of -0.47.
+* Table 5 shows high z-scores of between 4 and 5. 2007 was the worst year for Ludovic running the Sierra Zinal, with a z-score of 4.91.
+* When comparing tables 4 and 5, we find that his significantly worst races have much higher z-scores than his significantly best races. This shows Ludovic regularly performs to his highest capabilities, making great performances stand out less than his worst performances.
 
 <br><br>
 4. **Easiest vs. Hardest Races**: Determine which races were the most and least challenging over the years.
