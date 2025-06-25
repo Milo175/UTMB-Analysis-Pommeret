@@ -1,4 +1,4 @@
-# Ultra Marathon Athlete - Ludovic Pommeret - Data Analysis
+#  Ultra Marathon Data Analysis
 
 ![](Photos/UTMB-Photo.avif)
 
