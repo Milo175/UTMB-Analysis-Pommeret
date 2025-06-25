@@ -55,7 +55,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 8.	**Average Pace by Category**: Calculate average pace (min/km) for each race category.
 9.	**Ranking vs. Distance**: Explore whether ranking percentile tends to drop in longer races.
 10.	**Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
-11.	**Elevation vs. Finish Time**: Examine whether higher total elevation correlates with slower race results.
+11.	**Elevation vs. Finish Time**: Examine whether higher total elevation correlates with race results.
 12.	**Top 5% Finishes**: Calculate how often the athlete finishes in the top 5% overall.
 13.	**Finish Time Statistics**: Compute the average finish time and standard deviation across all races.
 14.	**Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
@@ -131,6 +131,8 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 
 * In table two, we find a clear difference in standard deviations in finish times in minutes per category, with a clear pattern showing the higher the race category, the higher the standard deviation.
 * This tells us that, on average, the greater the distance of the race, the more variety is found in finish times in total minutes.
+
+<br><br>
 
 **Table 3: Standard deviation for variable "finished percentile" across all genders per category**
 | Category   |   total_races | average_percentile_overall |   standard_dev_percentile_overall |
@@ -268,23 +270,34 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 * The athlete performs best in the 125 - 150 KM category (top 0.37%) and worst in the 0 - 25 KM category (top 9.42%).
 * We find a soft downwards trendline in table 11, indicating that performance improves as the distance of races increases.
 
+Note: it is important to mention that the count of races between 0 - 25 KM is 10, which is a very small sample size, which has to be taken into consideration when analyzing the downwards trendline in table 11. The above conclusion therefore acts more as a soft hypothesis, than a real statistically significant finding.
+
 <br><br>
 10. **Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
 
-| Category   | Race                                                         |   meters_incline_per_hour |
-|:-----------|:-------------------------------------------------------------|--------------------------:|
-| 20K        | TRANSVULCANIA ULTRAMARATHON LA PALMA ISLAND  - HALF MARATHON |                    913.88 |
-| 20K        | VILLACIDRO SKYRACE  - 21K                                    |                    809.1  |
-| 20K        | MONTREUX TRAIL FESTIVAL  - FREDDIE'S NIGHT                   |                    796.17 |
-| 50K        | SIERRE-ZINAL                                                 |                    759.72 |
-| 50K        | TRAIL D'ALBERTVILLE                                          |                    713.24 |
+**Table 12: Top 8 races with the fastest elevation gain pace (meters incline/hour)**
+| Category   | Date       | Race                                                         |   meters_incline_per_hour |
+|:-----------|:-----------|:-------------------------------------------------------------|--------------------------:|
+| 20K        | 2019-05-11 | TRANSVULCANIA ULTRAMARATHON LA PALMA ISLAND  - HALF MARATHON |                    913.88 |
+| 20K        | 2022-04-24 | VILLACIDRO SKYRACE  - 21K                                    |                    809.1  |
+| 20K        | 2019-07-27 | MONTREUX TRAIL FESTIVAL  - FREDDIE'S NIGHT                   |                    796.17 |
+| 50K        | 2007-08-12 | SIERRE-ZINAL                                                 |                    781.51 |
+| 50K        | 2008-08-10 | SIERRE-ZINAL                                                 |                    737.94 |
+| 50K        | 2013-09-22 | TRAIL D'ALBERTVILLE                                          |                    725    |
+| 50K        | 2012-09-23 | TRAIL D'ALBERTVILLE                                          |                    701.48 |
+| 50K        | 2009-06-13 | TRAIL FAVERGES ICEBREAKER  - MARATRAIL DE LA SAMBUY          |                    700.69 |
+
+* Ludovic shows the fastest elevation gain pace for races in the '20K' and '50K' category, with his fastest pace ever recorded being 913.88 meters/hour at the 'TRANSVULCANIA ULTRAMARATHON LA PALMA ISLAND  - HALF MARATHON' on the 11th of May, 2019.
+* The results in table 12 are similar to the general hypothesis, which states that the shorter the race, the lower the average elevation in meters and the more energy the athlete has to push himself over the elevation as fast as possible.
 
 <br><br>
-11. **Elevation vs. Finish Time**: Examine whether higher total elevation correlates with slower race results.
+11. **Elevation vs. Finish Time**: Examine whether higher total elevation correlates with race results.
 
 |   correlation_elevation_with_results |
 |--------------------------------:|
 |                         -0.0753 |
+
+* The correlation coefficient between elevation gain and race results (finished percentile) is -0.0753, which indicates a very weak to relationship between the two variables and that higher elevation gain very slightly increases race results. However, the correlation value is so low that it is safe to assume no actual relationship exists.
 
 <br><br>
 12. **Top 5% Finishes**: Calculate how often the athlete finishes in the top 5% overall.
