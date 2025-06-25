@@ -109,7 +109,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 
 1. **Best and Worst Finish**: Identify the athlete’s best and worst race results.
 
-**Table 1: best and worst finished races**
+**Table 1: Best and worst finished races**
 | Date       | Race                                                 | finish_percentile   |
 |:-----------|:-----------------------------------------------------|:--------------------|
 | 2021-10-21 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS | 0.06%               |
@@ -121,7 +121,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 <br><br>
 2. **Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
 
-**Table 2: standard deviation for variable "finish times in minutes" per category**
+**Table 2: Standard deviation for variable "finish times in minutes" per category**
 | Category   |   total_races |   average_finish_time_minutes |   standard_deviation_minutes |
 |:-----------|--------------:|------------------------------:|---------------------:|
 | 100M       |            23 |                       1052.78 |               529.23 |
@@ -132,7 +132,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 * In table two, we find a clear difference in standard deviations in finish times in minutes per category, with a clear pattern showing the higher the race category, the higher the standard deviation.
 * This tells us that, on average, the greater the distance of the race, the more variety is found in finish times in total minutes.
 
-**Table 3: standard deviation for variable "finished percentile" across all genders per category**
+**Table 3: Standard deviation for variable "finished percentile" across all genders per category**
 | Category   |   total_races | average_percentile_overall |   standard_dev_percentile_overall |
 |:-----------|--------------:|---------------------------:|-----------------------:|
 | 100M       |            23 |                       1.39 |                   2.77 |
@@ -148,7 +148,9 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 <br><br>
 3. **Outlier Races**: Find races where the athlete significantly over- or underperformed compared to their average.
 
-**Table 4: Significantly the best races over the years compared to the average time for said race:**
+* The question has been answered by grouping the races together by title, over all the years the athlete has been active, and calculating the mean performance in percentile finish. Then, I calculated the z-score of each year Ludovic ran said race, to find which years he over or underperformed. Negative z-scores are in this case positive, as lower percentile finishes indicate better performances.
+  
+**Table 4: Significantly the best races over the years compared to the average time for said race**
 | Date       | Race                                                 |   z_score_percentile_finish |
 |:-----------|:-----------------------------------------------------|----------------------------:|
 | 2021-10-21 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS |                       -0.47 |
@@ -157,7 +159,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 | 2019-04-27 | LA BOUILLONNANTE  - LA BOUILLONNANTE 50              |                       -0.46 |
 | 2019-10-17 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS |                       -0.45 |
 
-**Table 5: Significantly the worst races over the years compared to the average time for said race:**
+**Table 5: Significantly the worst races over the years compared to the average time for said race**
 | Date       | Race                                                 |   z_score_percentile_finish |
 |:-----------|:-----------------------------------------------------|----------------------------:|
 | 2007-08-12 | SIERRE-ZINAL                                         |                        4.91 |
@@ -166,14 +168,14 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 | 2023-10-19 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS |                        3.99 |
 | 2020-10-29 | GOLDEN TRAIL CHAMPIONSHIP  - GTC AZORES              |                        3.8  |
 
-* The question has been answered by grouping the races together by title, over all the years the athlete has been active, and calculating the mean performance in percentile finish. Then, I calculated the z-score of each year Ludovic ran said race, to find which years he over or underperformed.
-* Negative z-scores are in this case positive, as lower percentile finishes indicate better performances.
 * In table 4, we find that Ludovic significantly improved his performance for the race 'LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS' in 2021, with a z-score of -0.47.
 * Table 5 shows high z-scores of between 4 and 5. 2007 was the worst year for Ludovic running the Sierra Zinal, with a z-score of 4.91.
 * When comparing tables 4 and 5, we find that his significantly worst races have much higher z-scores than his significantly best races. This shows Ludovic regularly performs to his highest capabilities, making great performances stand out less than his worst performances.
 
 <br><br>
 4. **Easiest vs. Hardest Races**: Determine which races were the most and least challenging over the years.
+
+To find out which races Ludovic were generally easier or harder for him, I counted the number of z-scores over the years per race, with one filter that included only negative and one including only positive z-scores, and calculated the average z-score over the years for each race as well.
 
 **Table 6: Consistently least challenging races over the years**
 | Race                                                |   count_z_scores |   average_z_score |
@@ -193,7 +195,6 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 | UTMB®                                                |                2 |              0.5  |
 | MAXI-RACE DU LAC D'ANNECY  - TECNICA MAXI-RACE       |                2 |              0.43 |
 
-* To find out which races Ludovic were generally easier or harder for him, I counted the number of z-scores over the years per race, with one filter that included only negative and one including only positive z-scores, and calculated the average z-score over the years for each race as well.
 * Table 6 shows that the athlete most often has a negative z-score for the 'TRAIL FAVERGES ICEBREAKER  - MARATRAIL DE LA SAMBUY', which shows this was consistently his least challenging race over the years.
 * In table 7, we find that the 'TRAIL SAINTE VICTOIRE' race has the highest count of positive z-scores, indicating consistent struggle for the athlete when running this race over the years.
 
@@ -202,11 +203,15 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 
 For this question, I transformed the CSV table into a line chart to plot a trend line to discover trends over the last 18 years
 
+**Graph 1: Athlete's UTMB Index Score over the years of his career**
 ![](Photos/Picture%201.png)
 
+* The graph shows a steady linear trend line in the athletes 'Score' within the UTMB Index over the years. Given Ludovic's impressive records, this means that from the start of his ultra marathon sports career in 2007 until today, he has consistently been one of the best ultra runners in the world.
+  
 <br><br>
 6. **Seasonal Performance Trends**: Assess if race performance varies depending on the time of year.
 
+**Table 8: Athlete's average percentile finish per season of the year**
 | Season   |   number_of_races | average_percentile_finish   |
 |:---------|------------------:|:----------------------------|
 | Spring   |                35 | 0.84%                       |
@@ -214,13 +219,21 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 | Autumn   |                20 | 5.64%                       |
 | Winter   |                26 | 2.06%                       |
 
+* Table 8 shows that the athlete performs best in races held in the spring (top 0.84%) and winter (top 2.06%) time.
+* Ludovic performs lower in  races held in the autumn season, where he finished in the top 5.64% on average.
+
+**Note:** Again, it is important to mention that the total count in races is not equal per category. None of the results in the above table meets the requirements they need for them to be reliable. To further illustrate this point, the calculated needed sample size per category is 51, based on a confidence level of 70% and margin of error of 5%. The above conclusion therefore acts more as a soft hypothesis, than a real statistically significant finding.
+
 <br><br>
 7. **Country-Based Performance**: Identify whether atlete performs best in home or away races.
 
-| Country_cat   | average_percentile_finish   |
-|:--------------|:----------------------------|
-| FRANCE        | 2.26%                       |
-| AWAY          | 4.18%                       |
+**Table 9: Performance in home (France) vs Away races**
+| Country_cat   | count_races  | average_percentile_finish   |
+|:--------------|-------------:|----------------------------:|
+| FRANCE        |           97 | 		       2.26% |
+| AWAY          |           32 |		       4.18% |
+
+* Ludovic clearly performs better in Home races in France (top 2.26%) than in Away races outside of France (top 4.18%).
 
 <br><br>
 8. **Average Pace by Category**: Calculate average pace (min/km) for each race category.
