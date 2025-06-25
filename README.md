@@ -253,6 +253,7 @@ For this question, I transformed the CSV table into a line chart to plot a trend
  <br><br>
 9. **Ranking vs. Distance**: Explore whether ranking percentile tends to drop in longer races.
 
+**Table 11: Average percentile finished categorized by race distance**
 | distance_category   | average_percentile_finish   |
 |:--------------------|:----------------------------|
 | 0 - 25 km           | 9.42%                       |
@@ -262,6 +263,10 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 | 100 - 125 km        | 2.82%                       |
 | 125 - 150 km        | 0.37%                       |
 | 150 - 175 km        | 1.89%                       |
+
+* Table 11 proofs that Ludovic is an Ultra distance, Ultra Marathon runner, as his average finish in percentiles is stronger the greater the race distances.
+* The athlete performs best in the 125 - 150 KM category (top 0.37%) and worst in the 0 - 25 KM category (top 9.42%).
+* We find a soft downwards trendline in table 11, indicating that performance improves as the distance of races increases.
 
 <br><br>
 10. **Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
