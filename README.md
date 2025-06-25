@@ -121,19 +121,19 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 <br><br>
 2. **Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
 
-| Category   |   standard_deviation_minutes |
-|:-----------|---------------------:|
-| 100M       |               529.23 |
-| 100K       |               112.06 |
-| 50K        |                79.64 |
-| 20K        |                56.11 |
-
+**Table 2: standard deviation for variable "finish times in minutes" per category**
 | Category   |   total_races |   average_finish_time_minutes |   standard_deviation_minutes |
 |:-----------|--------------:|------------------------------:|---------------------:|
 | 100M       |            23 |                       1052.78 |               529.23 |
 | 100K       |            30 |                        533.36 |               112.06 |
 | 50K        |            66 |                        293.41 |                79.64 |
 | 20K        |            10 |                        136.8  |                56.11 |
+
+* In table two, we find a clear difference in standard deviations in finish times in minutes per category, with a clear pattern showing the higher the race category, the higher the standard deviation.
+* This tells us that, on average, the greater the distance of the race, the more variety is found in finish times in total minutes.
+
+Note: It is important to mention that the total count in races is not equal per category, and especially low for the '20K' and the '100M' categories. Only the results for the '50K' category meets the requirements for the results to be reliable. To further illustrate this point, the calculated needed sample size per category is 51, based on a confidence level of 70% and margin of error of 5%. The above conclusion therefore acts more as a soft hypothesis, than a real statistically significant finding.
+
 
 | Category   |   average_percentile_overall |   standard_dev_percentile_overall |
 |:-----------|-----------------------------:|-----------------------:|
