@@ -7,7 +7,7 @@ Welcome to my personal project!
 
 My name is **Milo**, and I am currently in the process of becoming a Data Analyst through self-education. In this project, I analyzed the race results of ultra marathon runner **Ludovic Pommeret** between 08-12-2007 and today. The reason I chose this specific topic is that I am an **ultra marathon enthousiast** and finisher myself. I specifically chose Ludovic as athlete due to the fact that he has both an **impressive and extensive** list of race results to his name.
 
-The **goal** of the project was to practice and further develop my Data Cleaning and Data Analysis skills in **MySQL**. In order to do so, I formulated **15 questions** for me to answer. These questions are listed in the chapter "Problem Statement".
+The **goal** of the project was to practice and further develop my Data Cleaning and Data Analysis skills in **MySQL**. In order to do so, I formulated **14 questions** for me to answer. These questions are listed in the chapter "Problem Statement".
 
 <br><br>
 ## Table of Contents <a name="table-of-contents"></a>
@@ -57,9 +57,8 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 10.	**Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
 11.	**Elevation vs. Finish Time**: Examine whether higher total elevation correlates with race results.
 12.	**Top 5% Finishes**: Calculate how often the athlete finishes in the top 5% overall.
-13.	**Finish Time Statistics**: Compute the average finish time and standard deviation across all races.
-14.	**Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
-15.	**Recovery Time Impact**: Analyze whether shorter recovery periods between races lead to worse results.
+13.	**Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
+14.	**Recovery Time Impact**: Analyze whether shorter recovery periods between races lead to worse results.
 
 <br><br>
 ## Data Cleaning & Transformation <a name="anchor-data-cleaning-transformation"></a>
@@ -270,7 +269,7 @@ For this question, I transformed the CSV table into a line chart to plot a trend
 * The athlete performs best in the 125 - 150 KM category (top 0.37%) and worst in the 0 - 25 KM category (top 9.42%).
 * We find a soft downwards trendline in table 11, indicating that performance improves as the distance of races increases.
 
-Note: it is important to mention that the count of races between 0 - 25 KM is 10, which is a very small sample size, which has to be taken into consideration when analyzing the downwards trendline in table 11. The above conclusion therefore acts more as a soft hypothesis, than a real statistically significant finding.
+**Note:** it is important to mention that the count of races between 0 - 25 KM is 10, which is a very small sample size, which has to be taken into consideration when analyzing the downwards trendline in table 11. The above conclusion therefore acts more as a soft hypothesis, than a real statistically significant finding.
 
 <br><br>
 10. **Climbing Efficiency**: Identify which race had the highest elevation gain per hour (meters/hour).
@@ -302,40 +301,50 @@ Note: it is important to mention that the count of races between 0 - 25 KM is 10
 <br><br>
 12. **Top 5% Finishes**: Calculate how often the athlete finishes in the top 5% overall.
 
-| percentage_top_five_finishes   |
+| percentage_top_five_percentage_finishes   |
 |:-------------------------------|
 | 89.92%                         |
 
-<br><br>
-13. **Finish Time Statistics**: Compute the average finish time and standard deviation across all races.
-![]()
+* Ludovic has finished in the top 5 percentile for 89.92% of all the races he has run.  
 
 <br><br>
-14. **Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
+13. **Fastest Average Speed**: Identify the race with the fastest average speed (km/h).
 
-| Date       | Race                                                | Category   |   Distance_km |   km/h |
-|:-----------|:----------------------------------------------------|:-----------|--------------:|-------:|
-| 2008-12-07 | LA SAINTÉLYON                                       | 50K        |          70   |  13.6  |
-| 2009-12-06 | LA SAINTÉLYON                                       | 50K        |          70   |  12.61 |
-| 2019-04-14 | TRAIL DROME  - 42 KM                                | 50K        |          42.7 |  12.53 |
-| 2020-10-11 | EDF TRAIL VALLÉES D'AIGUEBLANCHE  - ÉCHAPEAUX BELLE | 20K        |          25.8 |  12.39 |
-| 2019-04-27 | LA BOUILLONNANTE  - LA BOUILLONNANTE 50             | 50K        |          52.5 |  12.24 |
+**Table 13: Top 5 races with highest average speed (km/h)**
+| Date       | Race                                                | Category   |  Elevation_gain | Distance_km |   km/h |
+|:-----------|:----------------------------------------------------|:-----------|----------------:|------------:|-------:|
+| 2008-12-07 | LA SAINTÉLYON                                       | 50K        |          1500   |        70   |  13.6  |
+| 2009-12-06 | LA SAINTÉLYON                                       | 50K        |          1500   |        70   |  12.61 |
+| 2019-04-14 | TRAIL DROME  - 42 KM                                | 50K        |          2170   |        42.7 |  12.53 |
+| 2020-10-11 | EDF TRAIL VALLÉES D'AIGUEBLANCHE  - ÉCHAPEAUX BELLE | 20K        |          1380   |        25.8 |  12.39 |
+| 2019-04-27 | LA BOUILLONNANTE  - LA BOUILLONNANTE 50             | 50K        |          2570   |        52.5 |  12.24 |
+
+* Table 13 shows that the top 5 races with the highest average speed (km/h) fall within the '50K' and '20K' categories.
+* Ludovic ran his fastest pace during the 'LA SAINTÉLYON' in 2008 (13.6 km/h) and in 2009 (12.61 km/h). His pace was faster than his forth fastest paced race "EDF TRAIL VALLÉES D'AIGUEBLANCHE  - ÉCHAPEAUX BELLE" in 2020, which had a shorter distance and lower elevation gain. 
 
 <br><br>
-15. **Recovery Time Impact**: Analyze whether shorter recovery periods between races lead to worse results.
-	
-| days_between_races   | average_percentile_finish   |
-|:---------------------|:----------------------------|
-| 0 - 29               | 2.4%                        |
-| 30 - 59              | 1.2%                        |
-| 60 - 89              | 2.9%                        |
-| 90 - 119             | 8.0%                        |
-| 120 - 149            | 3.8%                        |
-| 150 - 179            | 2.9%                        |
-| 180 - 209            | 5.4%                        |
-| 210 - 239            | 11.6%                       |
-| 270 - 299            | 2.2%                        |
+14. **Recovery Time Impact**: Analyze whether shorter recovery periods between races lead to worse results.
 
+For this analysis, I categorized the days between races in bins of 30 days in order to group the races together for analysis.
+
+**Table 14: Recovery Time versus race performance**
+| days_between_races   |   count_races | average_percentile_finish   |
+|:---------------------|--------------:|:----------------------------|
+| 0 - 29               |            74 | 2.4%                        |
+| 30 - 59              |            27 | 1.2%                        |
+| 60 - 89              |             6 | 2.9%                        |
+| 90 - 119             |             3 | 8.0%                        |
+| 120 - 149            |             6 | 3.8%                        |
+| 150 - 179            |             4 | 2.9%                        |
+| 180 - 209            |             3 | 5.4%                        |
+| 210 - 239            |             4 | 11.6%                       |
+| 270 - 299            |             1 | 2.2%                        |
+
+* The athlete performs best when given 30 - 59 days of recovery before his race, followed by 0 - 29 and 270 - 299 days.
+* Ludovic's worst performances came after a resting period between 210 - 239 days and 90 - 119 days.
+* The results in table 14 do not show a clear trend or pattern in recovery time versus race performance.
+
+**Note:** given the sample size for each bin is not close to equal, and most races find themselves in the 0-29 and 30-59 days bins, the results in the table cannot be considered as statistically significant findings. The analysis of question 14 has purely been for educational purposes on writing MySQL queries.
 
 <br><br>
 ## Further Research Recommendations
