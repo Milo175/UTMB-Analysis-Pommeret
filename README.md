@@ -109,10 +109,14 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 
 1. **Best and Worst Finish**: Identify the athlete’s best and worst race results.
 
+**Table 1: best and worst finished races**
 | Date       | Race                                                 | finish_percentile   |
 |:-----------|:-----------------------------------------------------|:--------------------|
 | 2021-10-21 | LE GRAND RAID DE LA RÉUNION  - LA DIAGONALE DES FOUS | 0.06%               |
 | 2019-08-11 | MERIBEL TRAIL CHAMPIONNAT FRANCE TRAIL  - 25 KM      | 55.13%              |
+
+* Ludovic's best career finish was at the race 'Le Grand Raid de la Réunion - La Diagonale des Fous' on the 21st of October, 2021, where he finished in the top 0.06% percentile of all athletes.
+* His worst career finish was on August 11th, 2019, at the 'Meribel Trail Chapionnat France Trail', where he finished in the top 55.13% percentile of all athletes.
 
 <br><br>
 2. **Consistency by Category**: Analyze whether performance is more consistent within certain race categories.
