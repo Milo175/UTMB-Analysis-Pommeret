@@ -24,6 +24,9 @@ The **goal** of the project was to practice and further develop my Data Cleaning
 ## Executive Summary
 [> back to table of contents](#table-of-contents)
 
+Ludovic Pommeret's **top result** was at La Diagonale des Fous (2021), finishing in the top 0.06%. His weakest was at Meribel Trail (2019), in the 55.13% percentile. When taking a closer look at his **performances per category**, we find he his finish times are more consistent in shorter categories like the 50K, with greater variability in 100M races. His significantly fast performances (e.g., 2021’s Diagonale des Fous) are closer to his average than his worst ones, suggesting the athlete consistently performs at a high baseline. Due to the height of the baseline, it is very difficult to step over it. **Races that were consistently challenging** for Ludovic incldue the 'Trail Sainte Victoire', 'Le Grand Raid de la Réunion - La Diagonale Des Fous', and the 'Ultra Trail de Mont Blanc' (despite winning the latter race in 2022). Races such as the Trail Faverges Icebreaker  - Maratrail De La Sambuy
+and the 'Trail Nivolet Revard  - Trail Nivolet-Revard' posed no threat over the years. On average, the athlete performs **strongest in the spring and winter season**, and completes his worst performances in autumn. When analysing Ludovic's **race performance based on his resting period**, he performs at his best after a recovery period between 0 and 89 days. He also performs best on home turf (2.26% percentile finish) versus abroad (4.18% percentile finish). Furthermore, we found that his average running pace naturally declines with increasing race distances - the same can be said about his elevation climbing pace. Finally, Ludovic's **UTMB Index Score** peaked and has stayed very consistent since the start of his career, a final proof of his excellent performance as an ultra marathon runner.
+
 <br><br>
 ## Data Sourcing
 [> back to table of contents](#table-of-contents)
