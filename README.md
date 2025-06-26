@@ -91,7 +91,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
   * CTE, subqueries, WINDOW FUNCTIONS, SUBSTRING_INDEX, CONCAT(), INNER JOIN
 
 
-#### Exploratory Data Analysis
+#### Exploratory Data Analysis (EDA)
 * Identified trends and patterns in performance across multiple variables
 * Applied **descriptive statistics** to explore distributions, variability, and anomalies
 * **Analyzed data over time** (by year and season) to uncover temporal trends
