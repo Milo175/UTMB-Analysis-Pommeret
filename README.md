@@ -24,7 +24,7 @@ The **goal** of the project was to practice and further develop my Data Cleaning
 ## Executive Summary
 [> back to table of contents](#table-of-contents)
 
-Ludovic Pommeret's **top result** was at La Diagonale des Fous (2021), finishing in the top **0.06**% percentile. His weakest was at Meribel Trail (2019), in the **55.13**% percentile. When taking a closer look at his **performances per category**, we find he his finish times are more consistent in shorter categories like the **50K** (**std dev: 79.64 min**), with greater variability in **100M** races (**std dev: 529.23**). His significantly fast performances (e.g., 2021’s Diagonale des Fous) are closer to his average than his worst ones, suggesting the athlete consistently performs at a high baseline. Due to the extreme height of the baseline, it is very difficult for Ludovic to step over it and overperform. **Races that were consistently challenging** for Ludovic incldue the '**Trail Sainte Victoire**' and '**Le Grand Raid de la Réunion - La Diagonale Des Fous**'. Races such as the '**Trail Faverges Icebreaker  - Maratrail De La Sambuy**' and the '**Trail Nivolet Revard  - Trail Nivolet-Revard**' posed **no threat** over the years. Moving on to his **average performance per season**, the athlete performs strongest in the **spring** (top 0.84% percentile) and **winter season** (top 2.06% percentile), and completes his worst performances in **autumn** (top 5.64% percentile). During analysis of Ludovic's **race performance based on his resting period**, we found he performs at his best after a **recovery period between 0 and 89 days**. He also performs **best on home turf** **(2.26% percentile)** versus **abroad** **(4.18% percentile)**. Furthermore, we found that his **average running pace** naturally declines with increasing race distances - the same can be said about his **elevation climbing pace**. His fastest running pace ever recorded was at the '**La Sainté Lyon' race in 2007**, where he ran an average of **13.6 km/h**. His fastest elevation climbing pace was recorded at the '**Transvulcania Ultramarathon La Palma Island - Half Marathon' race in 2019**, with a pace of **913.88 meters incline/h**. Finally, Ludovic's **UTMB Index Score** peaked and has stayed very consistent since the start of his career, a final proof of his excellent performance as an ultra marathon runner.
+Ludovic Pommeret's **top result** was at La Diagonale des Fous (2021), finishing in the top **0.06**% percentile. His weakest was at Meribel Trail (2019), in the **55.13**% percentile. When taking a closer look at his **performances per category**, we find he his finish times are more consistent in shorter categories like the **50K** (**std dev: 79.64 min**), with greater variability in **100M** races (**std dev: 529.23**). His significantly fast performances (e.g., 2021’s Diagonale des Fous) are closer to his average than his worst ones, suggesting the athlete consistently performs at a high baseline. Due to the extreme height of the baseline, it is very difficult for Ludovic to step over it and overperform. **Races that were consistently challenging** for Ludovic incldue the '**Trail Sainte Victoire**' and '**Le Grand Raid de la Réunion - La Diagonale Des Fous**'. Races such as the '**Trail Faverges Icebreaker  - Maratrail De La Sambuy**' and the '**Trail Nivolet Revard  - Trail Nivolet-Revard**' posed **no threat** over the years. Moving on to his **average performance per season**, the athlete performs strongest in the **spring** (top 0.84% percentile) and **winter season** (top 2.06% percentile), and completes his worst performances in **autumn** (top 5.64% percentile). During analysis of Ludovic's **race performance based on his resting period**, we found he performs at his best after a **recovery period between 0 and 89 days**. He also performs **best on home turf** **(2.26% percentile)** versus **abroad** **(4.18% percentile)**. Furthermore, we found that his **average running pace** naturally declines with increasing race distances - the same can be said about his **elevation climbing pace**. His fastest running pace ever recorded was at the '**La Sainté Lyon' race in 2007**, where he ran an average of **13.6 km/h**. His fastest elevation climbing pace was recorded at the '**Transvulcania Ultramarathon La Palma Island - Half Marathon' race in 2019**, with a pace of **913.88 meters incline/h**. Finally, Ludovic's **UTMB Index Score** peaked and has stayed very consistent since the start of his career, a final proof of his extraordinary performance as an ultra marathon runner.
 
 <br><br>
 ## Data Sourcing
@@ -35,7 +35,7 @@ The data used for this analysis has been directly taken from the official UTMB w
 Website: [click here to go to the website](https://utmb.world/runner/7829.ludovic.pommeret)
 
 #### Limitation of the dataset
-This dataset contains 129 race results, which represents a relatively small sample size. While this allows for meaningful exploratory analysis, the findings should be interpreted with caution. The primary objective of this project was to strengthen and demonstrate proficiency in MySQL.
+This dataset contains 129 race results, which represents a **relatively small sample size**. While this allows for meaningful exploratory analysis, the findings should be interpreted with caution. The primary objective of this project was to strengthen and demonstrate proficiency in MySQL. In addition, **the dataset includes a limited number of variables**. Since race performance is dependant on countless factors (e.g., nutrition, sleep quality, injuries, weather conditions), the insights derived from performance-related questions in this project should be **interpreted as correlations rather than causations**.
 
 That said, the analysis may still uncover interesting patterns or soft predictors worth exploring further. These insights should be considered as hypotheses rather than definitive conclusions — ideally validated with a larger dataset or additional performance metrics. Whether you're a data enthusiast or Ludovic Pommeret himself, take the results as an invitation to investigate, not as final truths.
 
@@ -352,3 +352,25 @@ For this analysis, I categorized the days between races in bins of 30 days in or
 <br><br>
 ## Further Research Recommendations
 [> back to table of contents](#table-of-contents)
+
+My analysis on the UTMB race results from Ludovic Pommeret has its limitations, and further research is recommended to gather more precise and usable results. 
+
+1. **Variables taken into account**: The number of variables that were compared against Ludovic's performance during the analysis were monotonous and limited. In reality, race performance can be impacted by  a lot of factors, including sleep quality, weather conditions, mental and physical health, injuries, nutrition, etc. Including these factors and variables in the dataset of future research on this topic might reveal causational insights, rather than mere correlational insights that need to be tested and further analysed.
+
+2. **Sample size for sub-categories**: The total sample size (129) used in the project was sufficient for general statistical analysis. However, the sample sizes of several sub-categories (e.g., race categories, distance categories, and seasons) used to answer specific problem statements were too small to form accurate trends, patterns, and predictions. These questions were still included in this project, since education and upskilling were the main goals, but future research should include a greater sample size to make the results more accurate. For individual runners, this cannot always be achieved as there are only a limited number of races you can participate in during a year or your career. Therefore, the scope of future reserach might need to be adapted to include a larger sample size (e.g., analyse the data from all participants of one race or analyse all races from the top 50 ultra marathon athletes in the world today).
+
+3. **Benchmark or control group**: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
