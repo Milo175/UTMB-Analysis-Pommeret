@@ -107,6 +107,7 @@ That said, the analysis may still uncover interesting patterns or soft predictor
 ## Exploratory Data Analysis
 [> back to table of contents](#table-of-contents)
 
+- Link to the MySQL Script used for the EDA: [MySQL File](SQL-Scripts/EDA/MySQL%20-%20UTMB%20-%20EDA.sql)
 
 ### 1. **Best and Worst Finish**: Identify the athlete’s best and worst race results.
 
