@@ -355,11 +355,33 @@ For this analysis, I categorized the days between races in bins of 30 days in or
 
 My analysis on the UTMB race results from Ludovic Pommeret has its limitations, and further research is recommended to gather more precise and usable results. 
 
-1. **Variables taken into account**: The number of variables that were compared against Ludovic's performance during the analysis were monotonous and limited. In reality, race performance can be impacted by  a lot of factors, including sleep quality, weather conditions, mental and physical health, injuries, nutrition, etc. Including these factors and variables in the dataset of future research on this topic might reveal causational insights, rather than mere correlational insights that need to be tested and further analysed.
+1. **Variables taken into account**: The number of variables that were compared against Ludovic's performance during the analysis were independent and limited. In reality, race performance can be impacted by  a lot of factors, including sleep quality, weather conditions, mental and physical health, injuries, nutrition, etc. Including these factors and variables in the dataset of future research on this topic might reveal causational insights, rather than mere correlational insights that need to be tested and further analysed.
 
-2. **Sample size for sub-categories**: The total sample size (129) used in the project was sufficient for general statistical analysis. However, the sample sizes of several sub-categories (e.g., race categories, distance categories, and seasons) used to answer specific problem statements were too small to form accurate trends, patterns, and predictions. These questions were still included in this project, since education and upskilling were the main goals, but future research should include a greater sample size to make the results more accurate. For individual runners, this cannot always be achieved as there are only a limited number of races you can participate in during a year or your career. Therefore, the scope of future reserach might need to be adapted to include a larger sample size (e.g., analyse the data from all participants of one race or analyse all races from the top 50 ultra marathon athletes in the world today).
+2. **Sample size for sub-categories**: The total sample size (129) used in the project was sufficient for general statistical analysis. However, the sample sizes of several sub-categories (e.g., race categories, distance categories, and seasons) were too small to form accurate trends, patterns, and predictions. These questions were still explored in this project, as the primary objective was to build and demonstrate analytical skills, but future research should include a greater sample size to make the results more accurate. For individual runners, this cannot always be achieved as there are only a limited number of races you can participate in during a year or your career. Therefore, the scope of future reserach might need to be adapted to include a larger sample size (e.g., analyse the data from all participants of one race or analyse all races from the top 50 ultra marathon athletes in the world today).
 
-3. **Benchmark or control group**: 
+3. **Benchmark or control group**: The analysis is based solely on the race data from one high performance athlete, Ludovic Pommeret. It can be interesting to, after having applied to first two additional further research recommendations above, to compare the findings and hypotheses to the sport benchmark using a control group. This can uncover factors that distinguish the top percentile of ultra marathon runners from the average runner. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
